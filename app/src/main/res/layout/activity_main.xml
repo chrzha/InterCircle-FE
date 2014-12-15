@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#2c3e50"
+        android:layout_height="40dip">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Chat"
+            android:textSize="20dip"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Friends"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Me"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:gravity="center"/>
+        </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#ecf0f1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation">
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagertab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"/>
+    </android.support.v4.view.ViewPager>
+   
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"/>
+
+
+</LinearLayout>   

@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.acxiom.mobile.intercircle_fe.ChatActivity">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#2c3e50">
+        <TextView
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:text="<"
+            android:textSize="20dip"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:gravity="center"
+            android:text="Talking with xxx"/>
+
+        <TextView
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="+"
+            android:textSize="20dip"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000">
+            <ScrollView
+                android:id="@+id/svContent"
+                android:layout_width="fill_parent"
+                android:padding="8dip"
+                android:background="#e8e8e8"
+                android:layout_height="fill_parent">
+
+               <RelativeLayout
+                   android:orientation="horizontal"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content">
+
+                   <RelativeLayout
+                       android:layout_alignParentLeft="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                           <ImageView
+                               android:layout_width="36dip"
+                               android:layout_height="36dip"
+                               android:background="#222222"
+                               android:src="@drawable/head0" />
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Hello dream, I am Conan, nice to meet you"
+                               android:layout_marginLeft="40dip"
+                               android:textSize="14dip"
+                               android:padding="10dip"
+                               android:maxWidth="280dip"
+                               android:background="#222"
+                               android:textColor="#ffffff"/>
+                       </RelativeLayout>
+
+
+                   <RelativeLayout
+                       android:layout_marginTop="110dip"
+                       android:layout_alignParentRight="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_alignParentRight="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Hello Conan, I am dream"
+                           android:layout_marginRight="40dip"
+                           android:textSize="14dip"
+                           android:padding="10dip"
+                           android:maxWidth="280dip"
+                           android:background="#222"
+                           android:textColor="#ffffff"/>
+                       <ImageView
+                           android:layout_alignParentRight="true"
+                           android:layout_width="36dip"
+                           android:layout_height="36dip"
+                           android:background="#222222"
+                           android:src="@drawable/head1" />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_marginTop="60dip"
+                       android:layout_alignParentRight="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_alignParentRight="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Hello Conan, I am dream"
+                           android:layout_marginRight="40dip"
+                           android:textSize="14dip"
+                           android:padding="10dip"
+                           android:maxWidth="280dip"
+                           android:background="#222"
+                           android:textColor="#ffffff"/>
+                       <ImageView
+                           android:layout_alignParentRight="true"
+                           android:layout_width="36dip"
+                           android:layout_height="36dip"
+                           android:background="#222222"
+                           android:src="@drawable/head1" />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_marginTop="160dip"
+                       android:layout_alignParentRight="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_alignParentRight="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Hello Conan, I am dream"
+                           android:layout_marginRight="40dip"
+                           android:textSize="14dip"
+                           android:padding="10dip"
+                           android:maxWidth="280dip"
+                           android:background="#222"
+                           android:textColor="#ffffff"/>
+                       <ImageView
+                           android:layout_alignParentRight="true"
+                           android:layout_width="36dip"
+                           android:layout_height="36dip"
+                           android:background="#222222"
+                           android:src="@drawable/head1" />
+                   </RelativeLayout>
+                   </RelativeLayout>
+
+                </ScrollView>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="#ffffff"
+                android:padding="4dip"
+                android:layout_alignParentBottom="true">
+                    <EditText
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:layout_marginRight="90dip"/>
+                    <Button
+                        android:layout_alignParentRight="true"
+                        android:layout_width="80dip"
+                        android:text="Send"
+                        android:background="#222222"
+                        android:textColor="#ffffff"
+                        android:layout_height="fill_parent" />
+                </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

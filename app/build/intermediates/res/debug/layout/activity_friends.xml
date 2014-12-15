@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:text="Friend List"
+        android:gravity="center"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="200dip">
+        <ListView
+            android:id="@+id/lvFriends"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+    </ScrollView>
+</LinearLayout><!-- From: file:/D:/JohnNong/codes/android/project/InterCircle-FE/app/src/main/res/layout/activity_friends.xml -->

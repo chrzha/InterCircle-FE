@@ -1,0 +1,5 @@
+D:\JohnNong\codes\android\project\InterCircle-FE\app\build\intermediates\classes\debug
+D:\JohnNong\codes\android\project\InterCircle-FE\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-a911b71b38a7fa7ef914b47e21b7a3b063e90616.jar
+D:\JohnNong\codes\android\project\InterCircle-FE\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-48b48fdbf1af0719601126287b72de98667e0105.jar
+D:\JohnNong\codes\android\project\InterCircle-FE\app\build\intermediates\pre-dexed\debug\classes-2fd0f757450bc9e9bd0de9c891b915c4236b0c91.jar
+D:\JohnNong\codes\android\project\InterCircle-FE\app\build\intermediates\pre-dexed\debug\classes-e9835dac52f7627ab5b46c7f68a41b2eab50502b.jar
