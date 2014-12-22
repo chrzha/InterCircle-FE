@@ -21,23 +21,16 @@ public class LoginActivity extends Activity {
     private Button btnLogin;
     private TextView btnReg, btnForget;
     private Intent intent;
+    private static final String NETWORKERROR = "Please check your network!";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//remove title
         setContentView(R.layout.activity_login);
-
-        ConnectivityManager con = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
-        boolean wifi = con.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
-                .isConnectedOrConnecting();
-        boolean internet = con.getNetworkInfo(ConnectivityManager.TYPE_MOBILE)
-                .isConnectedOrConnecting();
-
-        if (!internet&&!wifi) {
-            Toast.makeText(getApplicationContext(), "Please check your network!",
+        if (!checkNetworkStatus()){
+            Toast.makeText(getApplicationContext(),NETWORKERROR,
                     Toast.LENGTH_LONG).show();
         }
-
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnReg = (TextView)findViewById(R.id.btnReg);
         btnForget = (TextView)findViewById(R.id.btnForget);
@@ -65,6 +58,19 @@ public class LoginActivity extends Activity {
 
     }
 
+    public boolean checkNetworkStatus(){
+        boolean result=true;
+        ConnectivityManager con = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
+        boolean wifi = con.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
+                .isConnectedOrConnecting();
+        boolean internet = con.getNetworkInfo(ConnectivityManager.TYPE_MOBILE)
+                .isConnectedOrConnecting();
+
+        if (!internet&&!wifi) {
+           result = false;
+        }
+        return  result;
+    }
     public void forgetPassword () {
         intent = new Intent(this, FriendsActivity.class);
         Log.i("info", "In forgetPassword()");
@@ -80,9 +86,15 @@ public class LoginActivity extends Activity {
     }
     public void checkLogin() {
         intent = new Intent(this, MainActivity.class);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
+        if (checkNetworkStatus()){
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
+        }else{
+            Toast.makeText(getApplicationContext(),NETWORKERROR,
+                    Toast.LENGTH_LONG).show();
         }
+
     }
 
     @Override
